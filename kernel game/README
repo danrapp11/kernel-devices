@@ -1,0 +1,13 @@
+AI algorithm just plays in order the A1, B1, C1, A2, B2, C2, A3, B3, C3.
+To run:
+	make
+	sudo insmod ./tictactoe
+	echo "command" /dev/tictactoe
+	cat /dev/tictactoe (to print board state to userspace)
+To close:
+	sudo rmmod tictactoe
+	make clean
+creates kernel device tictactoe which allows the user to play a game of tictactoe with the kernel (it is not very good).
+commands:
+	RESET - resets the game board to blank
+	TURN X Y - plays user turn on coordinates inputted X is A B or C and Y is 1 2 or 3
