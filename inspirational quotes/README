@@ -1,0 +1,9 @@
+Quotes found on page 1 and 2 of this website https://www.brainyquote.com/topics/inspirational-quotes
+To run:
+    make
+    sudo insmod ./inspireme.ko
+    cat /dev/inspireme
+To close:
+    sudo rmmod inspireme
+    make clean
+creates linux kernel device inspireme which when read with the cat command, outputs an inspirational quote to userspace.
